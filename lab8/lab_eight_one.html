@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HJ</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 95vh;
+            /* border: 1px solid red;                 DEBUGGING PURPOSE */
+            padding: 10px;
+        }
+
+        .whole{
+            height: 99%;
+            /* border: 1px solid blue; */
+            padding: 10px;
+        }
+
+        .header{
+            height: 15%;
+            /* border: 1px solid green; */
+            padding-bottom: 9px;
+            position: relative;                 /* make it relative due to it's child */
+        }
+        .main{
+            height: 60%;
+            /* border: 1px solid deeppink; */
+            position: relative;
+        }
+        .boxes{
+            height: 25%;
+            /* border: 1px solid black; */
+            padding-top: 16px;
+        }
+
+        .headerimage{
+            height: 100%;
+            width: 25%;
+            float: left;
+            /* border: 1px solid black; */
+        }
+        .linker{
+            height: 20%;
+            width: 30%;
+            float: right;
+            /* border: 1px solid orange; */
+
+            /*make div vertically center*/
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin-top: auto;
+            margin-bottom: auto;
+            
+            
+        }
+
+        .header img[src="https://darshan.ac.in/Content/media/DU_Logo.svg"]{
+            height: 100%;
+        }
+
+        .headerlink{
+            display: inline-block;  /*to make all in one line*/
+            height: 100%;
+            /* border: 1px solid blue; */
+            margin-left: 30px;
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .mainimage {
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .maintext{
+            color: white;
+            position: absolute;
+            z-index: 4;
+            right: 30px;
+            top: 160px;
+        }
+
+        .programs{
+            height: 100%;
+            width: 20%;
+            display: inline-block;
+            margin-inline-start: 35px;
+            margin-inline-end: 35px;
+            
+            /*Make horizontal center*/
+            text-align: center;
+            vertical-align: middle;
+            line-height: 100%;  /*as per div height*/
+            
+            border: 1px solid rgb(210, 8, 115);
+        }
+    </style>
+</head>
+<body>
+    <div class="whole">
+
+        <div class="header">
+            <div class="headerimage">
+                <img src="https://darshan.ac.in/Content/media/DU_Logo.svg">
+            </div>
+            <div class="linker">
+                <div class="headerlink"><a href="#">Home</a></div>
+                <div class="headerlink"><a href="#">About</a></div>
+                <div class="headerlink"><a href="#">Services</a></div>
+                <div class="headerlink"><a href="#">My Work</a></div>
+                <div class="headerlink"><a href="#">Contact</a></div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="maintext">
+                <strong>Hello, I am a developer</strong>
+                <br/><br/>
+                I use HTML and CSS to convert webpage designs into beautiful and efficient websites
+            </div>
+            <img class="mainimage" src="https://i.redd.it/king-of-hell-zoro-v0-ecwf0ygfix4c1.jpg?s=8f6640b9e8722534a7e8e64ebe13c180d4d85dfd">
+            
+        </div>
+
+        <div class="boxes">                          <!--ALL BOXES otherwise name as footer-->
+            <div class="programs">Program 1</div>
+            <div class="programs">Program 2</div>
+            <div class="programs">Program 3</div>
+            <div class="programs">Program 4</div>
+        </div>  
+    </div>
+</body>
+</html>
